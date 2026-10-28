@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Rascunho dos Termos de Uso do Conversations.">
+    <title>Conversations — Termos de Uso</title>
+    <style>
+      :root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #152033; background: #f7f9fc; }
+      body { margin: 0; line-height: 1.6; }
+      .notice { box-sizing: border-box; width: 100%; padding: .8rem 1.25rem; background: #fff1c2; color: #5a4000; font-weight: 700; text-align: center; }
+      main { max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+      h1 { margin: 0 0 .35rem; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.1; }
+      h2 { margin-top: 2rem; color: #0d5c63; }
+      a { color: #075d72; }
+      .lead { font-size: 1.15rem; color: #41536a; }
+      .note { padding: 1rem 1.25rem; border-left: .3rem solid #0d5c63; background: #eaf6f6; }
+      footer { margin-top: 2.5rem; color: #607086; font-size: .9rem; }
+    </style>
+  </head>
+  <body>
+    <div class="notice" role="note">Rascunho — pendente de revisão jurídica</div>
+    <main>
+      <p><a href="index.html">← Voltar ao Conversations</a></p>
+      <h1>Termos de Uso</h1>
+      <p class="lead">Estes termos são um rascunho para o Conversations e ainda não constituem uma versão jurídica definitiva.</p>
+
+      <p class="note"><strong>Status jurídico:</strong> o termo de uso e o acordo de tratamento de dados com cada empresa cliente são pré-requisitos previstos para o piloto e aguardam revisão jurídica.</p>
+
+      <h2>Uso no contexto da empresa cliente</h2>
+      <p>O Conversations é destinado ao uso no contexto da empresa cliente. Essa empresa é a controladora dos dados que trata em suas conversas, e o KNOTEN atua como operador segundo suas instruções.</p>
+
+      <h2>Transparência para clientes e membros</h2>
+      <p>A empresa cliente deve disponibilizar aviso na primeira interação com o cliente final. Para os membros da organização, o primeiro login deve informar que as conversas são visíveis à hierarquia, que a abertura por supervisores é registrada e que respostas a campanhas podem ser resumidas e classificadas por IA para o gestor.</p>
+
+      <h2>Dados, retenção e direitos</h2>
+      <p>A retenção é configurável por organização, com padrão previsto de 24 meses, e a expurgação é registrada no histórico de auditoria. O desenho do produto prevê recursos, restritos ao dono da organização, para exportar e anonimizar conversas de contatos com registro de auditoria.</p>
+      <p>As solicitações de titulares devem seguir os canais da empresa cliente controladora. Não use Issues públicas para fornecer dados pessoais, conversas ou telefones.</p>
+
+      <h2>Uso de IA e suboperadores</h2>
+      <p>O desenho prevê minimização de dados no uso de IA: somente o necessário para cada sugestão, classificação ou resumo. Para resumos de eventos, os trechos de resposta usam telefone mascarado e não incluem o nome completo.</p>
+      <p>Os suboperadores previstos são Supabase na região sa-east-1 (AWS São Paulo), Meta para WhatsApp, OpenAI para sugestões, classificações e resumos e Google para FCM sem conteúdo. A confirmação da política de retenção e uso para treinamento da API da OpenAI permanece pendente antes do piloto.</p>
+
+      <h2>Versão definitiva</h2>
+      <p>Esta página será substituída ou atualizada somente após a revisão jurídica apropriada. Até lá, consulte também a <a href="privacidade.html">Política de Privacidade em rascunho</a>.</p>
+
+      <h2>Contato sobre este rascunho</h2>
+      <p>Para comentários não sensíveis sobre os termos, abra uma <a href="https://github.com/guilhermecrepaldi/conversations-site/issues">Issue no repositório público</a>. Não inclua dados pessoais nesse canal.</p>
+
+      <footer>
+        Rascunho baseado na seção de LGPD da documentação do projeto; não substitui termos definitivos nem aconselhamento jurídico.
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Rascunho da Política de Privacidade do Conversations.">
+    <title>Conversations — Política de Privacidade</title>
+    <style>
+      :root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #152033; background: #f7f9fc; }
+      body { margin: 0; line-height: 1.6; }
+      .notice { box-sizing: border-box; width: 100%; padding: .8rem 1.25rem; background: #fff1c2; color: #5a4000; font-weight: 700; text-align: center; }
+      main { max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+      h1 { margin: 0 0 .35rem; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.1; }
+      h2 { margin-top: 2rem; color: #0d5c63; }
+      a { color: #075d72; }
+      .lead { font-size: 1.15rem; color: #41536a; }
+      .note { padding: 1rem 1.25rem; border-left: .3rem solid #0d5c63; background: #eaf6f6; }
+      footer { margin-top: 2.5rem; color: #607086; font-size: .9rem; }
+    </style>
+  </head>
+  <body>
+    <div class="notice" role="note">Rascunho — pendente de revisão jurídica</div>
+    <main>
+      <p><a href="index.html">← Voltar ao Conversations</a></p>
+      <h1>Política de Privacidade</h1>
+      <p class="lead">Este texto é um rascunho de transparência para o Conversations. Ele será revisado juridicamente antes de qualquer uso como política definitiva.</p>
+
+      <p class="note"><strong>Status jurídico:</strong> as bases legais, os termos de uso e o acordo de tratamento de dados (DPA) ainda dependem de revisão por advogado.</p>
+
+      <h2>Controladora e operadora</h2>
+      <p>A empresa cliente que utiliza o Conversations é a controladora dos dados tratados no contexto de suas conversas. O KNOTEN atua como operador, conforme as instruções dessa empresa cliente.</p>
+
+      <h2>Finalidades e transparência</h2>
+      <p>O desenho atual considera como bases a execução de contrato e o legítimo interesse da empresa cliente. O cliente final deve receber um aviso na primeira interação, por template ou mensagem configurada pelo dono da organização.</p>
+      <p>No primeiro login, o membro da organização deve ser informado de que as conversas da empresa são visíveis à hierarquia; que a abertura de conversas por supervisores é registrada; e que respostas a campanhas podem ser resumidas e classificadas por IA para o gestor.</p>
+
+      <h2>Retenção e registro</h2>
+      <p>A retenção é configurável por organização, com padrão previsto de 24 meses. A expurgação é registrada no registro de auditoria.</p>
+
+      <h2>Direitos do titular</h2>
+      <p>O desenho do produto prevê que o dono da organização possa exportar e anonimizar as conversas de um contato, com registro no histórico de auditoria. A anonimização também alcança os insights de eventos e os resumos que mencionem o contato.</p>
+      <p>Pedidos relacionados a dados devem ser encaminhados à empresa cliente controladora pelos canais por ela indicados. Não envie dados pessoais pelo canal público deste repositório.</p>
+
+      <h2>Suboperadores previstos</h2>
+      <ul>
+        <li>Supabase, na região sa-east-1 (AWS São Paulo);</li>
+        <li>Meta, para WhatsApp;</li>
+        <li>OpenAI, para sugestões, classificações e resumos; e</li>
+        <li>Google, para Firebase Cloud Messaging (FCM), sem conteúdo das conversas.</li>
+      </ul>
+      <p>Antes do piloto, ainda é necessário confirmar e registrar evidências sobre a retenção e o uso para treinamento na API da OpenAI.</p>
+
+      <h2>Minimização no uso de IA</h2>
+      <p>O desenho prevê o envio apenas do necessário para cada finalidade: as últimas N mensagens para uma sugestão; a oferta e a resposta para uma classificação; e trechos de resposta com o telefone mascarado e sem o nome completo para um resumo de evento.</p>
+
+      <h2>Contato sobre este rascunho</h2>
+      <p>Para comentários não sensíveis sobre esta página, abra uma <a href="https://github.com/guilhermecrepaldi/conversations-site/issues">Issue no repositório público</a>. Não inclua dados pessoais, conversas, telefones ou solicitações de titulares nesse canal.</p>
+
+      <footer>
+        Rascunho baseado na seção de LGPD da documentação do projeto; não substitui a política definitiva nem aconselhamento jurídico.
+      </footer>
+    </main>
+  </body>
+</html>
